@@ -3,7 +3,7 @@ const ccxt = require('ccxt');
 const axios = require('axios');
 
 const tick = async() => {
-  const { asset, base, spred, allocation} = config;
+  const { asset, base, spread, allocation } = config;
   const market = `${asset}/${base}`;
 
   const orders = await binanceClient.fetchOpenOrders(market);
